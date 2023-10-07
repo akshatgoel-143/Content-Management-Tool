@@ -6,7 +6,7 @@ You can also Edit you Posts, and can also delete your posts.
 Overall, this project mainly focuses on the CRUD Operations, wehere we can Create, Read, Update and Delete. We can easily understand these operations, by this Blog Project.
 
 <b>To Run this project:</b>
-Firstly Install the latest Python Versin to your PC.
+Firstly Install the latest Python Versin to your PC. 
 Now Extract this File to you PC
 Open the terminal on the location where the 'manage.py' is present.
 Now to fullfill the Requirements, give the following command:
