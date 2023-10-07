@@ -1,0 +1,38 @@
+{% extends 'cmsapp/base.html' %}
+{% block content %}
+{% load crispy_forms_tags %}
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="cardd">
+      <div class="m-b-25">
+        <img class="rounded-circle account-img" style="height: 40%; width: 40%;" id="profile-img" src="/media/profile_pics/Akshat.jpg" class="img-radius" alt="User-Profile-Image" >
+      </div>
+
+      <h1 id="profile-h1">Akshat Goel</h1>
+      <p class="title">goelakshat2002@gmail.com</p>
+
+      <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <fieldset class="form-group">
+            {{ u_form|crispy }}
+            {{ p_form|crispy }}
+        </fieldset>
+      </form>
+
+      <button id="btn-profile">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <a href="https://wa.me/+91905824183" id="auth-links" target="blank"><i class="fa fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com/Akshat.Goel.143" id="auth-links" target="blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/_akshatgoel_143/" id="auth-links" target="blank"><i class="fa fa-instagram"></i></a>
+        <a href="mailto:goelakshat2002@gmail.com" id="auth-links" target="blank"><i class="fa fa-envelope"></i></a>
+        <a href="https://twitter.com/AkshatG87333599" id="auth-links" target="blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/akshat-goel-601676215/" id="auth-links" target="blank"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/akshatgoel-143" id="auth-links" target="blank"><i class="fa fa-github"></i></a>
+      </button>
+    </div>
+
+{% endblock content %}
